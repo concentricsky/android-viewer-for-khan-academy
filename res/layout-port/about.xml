@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ 	Viewer for Khan Academy
+    Copyright (C) 2012 Concentric Sky, Inc.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ff232323"
+    >
+
+    	<include layout="@layout/about_csky_front"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight=".75"
+    	    />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="?android:attr/listDivider"
+            />
+
+        <LinearLayout android:id="@+id/khan_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".25"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+    
+            <ImageView android:id="@+id/about_khan_image"
+                android:src="@drawable/khan_logo_vertical_transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".50"
+                android:layout_marginBottom="20dp"
+                android:scaleType="fitCenter"
+                />
+
+            <TextView android:id="@+id/dialog_tos_content_freely_available"
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/msg_content_freely_available"
+                android:textAppearance="@style/text_about"
+                android:autoLink="web"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColorLink="@color/pressed_khan"
+                />
+
+        </LinearLayout>
+
+</LinearLayout>

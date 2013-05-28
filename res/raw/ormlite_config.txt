@@ -1,0 +1,330 @@
+#
+# generated on 2013/01/17 05:40:29
+#
+# --table-start--
+dataClass=com.concentricsky.android.khanacademy.data.db.BadgeCategory
+tableName=badgecategory
+# --table-fields-start--
+# --field-start--
+fieldName=id
+id=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.concentricsky.android.khanacademy.data.db.Caption
+tableName=caption
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=youtube_id
+# --field-end--
+# --field-start--
+fieldName=start_time
+# --field-end--
+# --field-start--
+fieldName=end_time
+# --field-end--
+# --field-start--
+fieldName=time_string
+# --field-end--
+# --field-start--
+fieldName=sub_order
+dataPersister=FLOAT
+# --field-end--
+# --field-start--
+fieldName=text
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.concentricsky.android.khanacademy.data.db.EntityBase
+tableName=entitybase
+# --table-fields-start--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --field-start--
+fieldName=ka_url
+# --field-end--
+# --field-start--
+fieldName=hide
+# --field-end--
+# --field-start--
+fieldName=parentTopic
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=ancestry
+# --field-end--
+# --field-start--
+fieldName=seq
+# --field-end--
+# --field-start--
+fieldName=kind
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.concentricsky.android.khanacademy.data.db.ModelBase
+tableName=modelbase
+# --table-fields-start--
+# --field-start--
+fieldName=kind
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.concentricsky.android.khanacademy.data.db.Thumbnail
+tableName=thumbnail
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=youtube_id
+indexName=thumbnail_youtube_id_idx
+# --field-end--
+# --field-start--
+fieldName=q
+dataPersister=BYTE
+indexName=thumbnail_q_idx
+# --field-end--
+# --field-start--
+fieldName=availability
+dataPersister=BYTE
+# --field-end--
+# --field-start--
+fieldName=data
+dataPersister=BYTE_ARRAY
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.concentricsky.android.khanacademy.data.db.Topic
+tableName=topic
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=child_kind
+# --field-end--
+# --field-start--
+fieldName=video_count
+# --field-end--
+# --field-start--
+fieldName=downloaded_video_count
+# --field-end--
+# --field-start--
+fieldName=thumb_id
+# --field-end--
+# --field-start--
+fieldName=standalone_title
+# --field-end--
+# --field-start--
+fieldName=childTopics
+foreignCollection=true
+# --field-end--
+# --field-start--
+fieldName=childVideos
+foreignCollection=true
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --field-start--
+fieldName=ka_url
+# --field-end--
+# --field-start--
+fieldName=hide
+# --field-end--
+# --field-start--
+fieldName=parentTopic
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=ancestry
+# --field-end--
+# --field-start--
+fieldName=seq
+# --field-end--
+# --field-start--
+fieldName=kind
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.concentricsky.android.khanacademy.data.db.User
+tableName=user
+# --table-fields-start--
+# --field-start--
+fieldName=token
+# --field-end--
+# --field-start--
+fieldName=secret
+# --field-end--
+# --field-start--
+fieldName=isSignedIn
+# --field-end--
+# --field-start--
+fieldName=user_id
+# --field-end--
+# --field-start--
+fieldName=prettified_user_email
+# --field-end--
+# --field-start--
+fieldName=total_seconds_watched
+# --field-end--
+# --field-start--
+fieldName=points
+# --field-end--
+# --field-start--
+fieldName=nickname
+id=true
+# --field-end--
+# --field-start--
+fieldName=joined
+# --field-end--
+# --field-start--
+fieldName=kind
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.concentricsky.android.khanacademy.data.db.UserVideo
+tableName=uservideo
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=user
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=video_id
+# --field-end--
+# --field-start--
+fieldName=completed
+# --field-end--
+# --field-start--
+fieldName=duration
+# --field-end--
+# --field-start--
+fieldName=last_second_watched
+# --field-end--
+# --field-start--
+fieldName=last_watched
+# --field-end--
+# --field-start--
+fieldName=points
+# --field-end--
+# --field-start--
+fieldName=seconds_watched
+# --field-end--
+# --field-start--
+fieldName=kind
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.concentricsky.android.khanacademy.data.db.Video
+tableName=video
+# --table-fields-start--
+# --field-start--
+fieldName=_id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=readable_id
+# --field-end--
+# --field-start--
+fieldName=download_status
+# --field-end--
+# --field-start--
+fieldName=keywords
+# --field-end--
+# --field-start--
+fieldName=progress_key
+# --field-end--
+# --field-start--
+fieldName=duration
+# --field-end--
+# --field-start--
+fieldName=youtube_id
+indexName=video_youtube_id_idx
+# --field-end--
+# --field-start--
+fieldName=mp4url
+# --field-end--
+# --field-start--
+fieldName=pngurl
+# --field-end--
+# --field-start--
+fieldName=m3u8url
+# --field-end--
+# --field-start--
+fieldName=date_added
+# --field-end--
+# --field-start--
+fieldName=views
+# --field-end--
+# --field-start--
+fieldName=dlm_id
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --field-start--
+fieldName=ka_url
+# --field-end--
+# --field-start--
+fieldName=hide
+# --field-end--
+# --field-start--
+fieldName=parentTopic
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=ancestry
+# --field-end--
+# --field-start--
+fieldName=seq
+# --field-end--
+# --field-start--
+fieldName=kind
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

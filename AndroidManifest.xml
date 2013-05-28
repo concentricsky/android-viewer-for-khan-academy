@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ 	Viewer for Khan Academy
+    Copyright (C) 2012 Concentric Sky, Inc.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.concentricsky.android.khan"
+      android:versionCode="14"
+      android:versionName="1.2.2">
+    <uses-sdk android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    <supports-screens
+        android:smallScreens="false"
+        android:normalScreens="false"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        ></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	
+    <application 
+    	android:icon="@drawable/icon_72" 
+    	android:label="@string/app_name"
+    	android:theme="@style/MainTheme"
+        android:hardwareAccelerated="true"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        >
+        <activity android:name="com.concentricsky.android.khanacademy.app.SignInActivity"
+            android:configChanges="screenSize|orientation" />
+        
+        <activity android:name="com.concentricsky.android.khanacademy.app.ShowProfileActivity"
+            android:configChanges="screenSize|orientation" />
+        
+        <activity android:name="com.concentricsky.android.khanacademy.app.ManageDownloadsActivity" />
+        
+        <activity android:name="com.concentricsky.android.khanacademy.app.AboutActivity">
+        </activity>
+        <service android:name="com.concentricsky.android.khanacademy.data.KADataService"></service>
+        <activity android:name="com.concentricsky.android.khanacademy.app.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.concentricsky.android.khanacademy.app.VideoListActivity" />
+        <activity android:name="com.concentricsky.android.khanacademy.app.TopicListActivity" />
+        <activity android:name="com.concentricsky.android.khanacademy.app.VideoDetailActivity" 
+		          android:theme="@style/VideoDetailTheme"
+		          android:configChanges="screenSize|orientation" />
+        
+        <receiver android:name="com.concentricsky.android.khanacademy.WifiReceiver" android:enabled="false">
+		    <intent-filter>
+		       <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+		    </intent-filter>
+		</receiver>
+        <receiver android:name="com.concentricsky.android.khanacademy.DownloadsReceiver" android:enabled="true">
+		    <intent-filter>
+		       <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+		       <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+		    </intent-filter>
+		</receiver>
+    </application>
+</manifest>

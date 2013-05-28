@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ 	Viewer for Khan Academy
+    Copyright (C) 2012 Concentric Sky, Inc.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources>
+
+    <color name="csky_link">#ff0079C0</color>
+
+    <!-- Khan Academy Colors -->
+    <color name="khan_green">#ff356700</color>
+    <color name="body_khan">#ff444444</color>
+    <color name="pressed_khan">#CC8ab908</color>
+    <color name="header_khan">#ff2C3747</color>
+    <color name="grey_background">#fff7f7f7</color>
+    <color name="grey_stroke">#ffcccccc</color>
+    
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    
+</resources>

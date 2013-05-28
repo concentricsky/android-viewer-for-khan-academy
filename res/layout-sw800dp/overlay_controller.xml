@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ 	Viewer for Khan Academy
+    Copyright (C) 2012 Concentric Sky, Inc.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<com.concentricsky.android.khanacademy.views.VideoController xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <RelativeLayout android:id="@+id/controller_scrub_container"
+	    android:background="@drawable/controller_bg"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+        android:paddingRight="10dp"
+	    >
+	    <ImageButton
+	        android:id="@+id/fullscreen_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/av_full_screen"
+	        android:scaleType="center"
+	        />
+	    <TextView 
+	        android:id="@+id/controller_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#ffffffff"
+	        android:layout_toLeftOf="@id/fullscreen_button"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"/>
+	    <SeekBar 
+	        android:id="@+id/controller_seek_bar"
+	        android:layout_centerVertical="true" 
+	        android:layout_toLeftOf="@id/controller_time"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp"
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:progress="0"
+	        android:secondaryProgress="0"
+	        android:progressDrawable="@drawable/controller_progress_bg"
+	        />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/controller_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/controller_scrub_container"
+        android:clickable="true"
+        android:focusable="true"
+        >
+	    <ImageButton 
+	        android:id="@+id/controller_button"
+	        android:background="@drawable/button_play"
+	        android:scaleType="center"
+	        android:layout_centerInParent="true"
+	        android:layout_width="120dp"
+	        android:layout_height="120dp"
+	        android:clickable="false"
+	        android:focusable="false"
+	        android:duplicateParentState="true"
+	        />
+    </RelativeLayout>
+    
+</com.concentricsky.android.khanacademy.views.VideoController>

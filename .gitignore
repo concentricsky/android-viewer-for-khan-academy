@@ -1,0 +1,46 @@
+.DS_Store
+env/
+tmp/**
+tmp/**/*
+.settings/
+.classpath
+.loadpath
+.cache
+.project
+.metadata
+*.sw*
+*.tmp
+*.bak
+
+oauth_credentials.json
+
+# android memory profile dump
+*.hprof
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# Package Files #
+*.jar
+
+# generated files
+bin/
+gen/
+target/
+build.prop
+
+# Local configuration file (sdk path, etc)
+local.properties

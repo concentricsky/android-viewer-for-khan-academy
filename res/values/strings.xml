@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ 	Viewer for Khan Academy
+    Copyright (C) 2012 Concentric Sky, Inc.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<string name="app_name">Viewer for Khan Academy</string>
+	<string name="profile_title">Profile &amp; Achievements</string>
+	
+	<string name="button_i_accept">I Accept</string>
+	<string name="button_cancel">Cancel</string>
+	<string name="button_confirm_delete">DELETE</string>
+	<string name="button_quit">Quit</string>
+	
+	<string name="caption_header">Captions</string>
+	
+	<string name="menu_item_delete">Delete</string>
+	<string name="menu_item_download_all">Download All</string>
+	<string name="menu_item_login">My Account</string>
+	<string name="menu_item_logout">Log Out</string>
+	
+	<string name="format_downloaded_count">(%d downloaded)</string>
+	<string name="format_video_count">(%d videos)</string>
+	<string name="format_topic_count">(%d topics)</string>
+	
+	<string name="err_playback_network">Network Error. Try downloading videos for offline viewing.</string> 
+    <string name="err_video_unavailable">Video Not Yet Available. Try again in a few hours.</string>
+
+    <string name="msg_cancel_downloads">Cancel pending downloads?</string>
+    <string name="msg_captions_loading">Captions loading.</string>
+    <string name="msg_captions_unavailable">Captions unavailable at this time.</string>
+    <string name="msg_delete_video">Delete offline copy of this video?</string>
+    <string name="msg_delete_videos">Delete offline copies of selected videos?</string>
+    <string name="msg_deleted">Deleted.</string>
+    <string name="msg_download_all">Download all %1$d videos?</string>
+    <string name="msg_download_both">Download both videos?</string>
+	<string name="msg_logged_out">Logged out.</string>
+	<string name="msg_no_downloaded_videos">No Downloaded Videos</string>
+	
+	<!--  TOS Acceptance alert dialog  -->
+	<string name="msg_not_endorsed">This product uses the Khan Academy API but is not endorsed or certified by <a href="http://khanacademy.org">Khan Academy</a>.</string>
+	<string name="msg_content_freely_available">All Khan Academy content is available for free at www.khanacademy.org</string>
+	<string name="msg_must_accept">You must accept <a href="http://www.khanacademy.org/about/tos">[the Khan Academy Terms of Service]</a> and <a href="http://www.khanacademy.org/about/privacy-policy">[the Khan Academy Privacy Policy]</a> to continue using the software.</string>
+	<string name="msg_khan_license">All content is copyright Khan Academy and freely distributed with a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution-NonCommercial-ShareAlike license</a>.</string>
+	<string name="msg_csky_copyright">Software &#169; 2012 <a href="http://concentricsky.com">Concentric Sky &#8482;</a>\n\nViewer for Khan Academy was developed by Concentric Sky in Eugene Oregon free of charge. Concentric Sky develops educational software solutions for companies and organizations like Cengage Learning, Encyclopedia Britannica, National Geographic, and Junyo. Education is in our roots, and we felt like building Viewer for Khan Academy (and open sourcing it) was an opportunity to give back to the world. Enjoy.</string>
+	<string name="attribution">Special thanks to Jeff Gilfelt for the <a href="http://jgilfelt.github.com/android-actionbarstylegenerator/">Android Action Bar Style Generator</a> and Jérôme Van Der Linden for the <a href="http://android-holo-colors.com/">Android Holo Colors Generator</a> which were used in creating design assets for this application.</string>
+	<string name="msg_csky_license_1">
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+	</string>
+	<string name="msg_csky_license_2">
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+	</string>
+	<string name="msg_csky_license_3">
+	A full copy of the GNU General Public License is available at <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>. Full source code for this program is available at <a href="https://github.com/concentricsky/android-viewer-for-khan-academy">https://github.com/concentricsky/android-viewer-for-khan-academy</a>.
+	</string>
+	<string name="url_register">http://www.khanacademy.org/signup</string>
+ 	<string name="url_format_thumbnail_lq">http://img.youtube.com/vi/%s/default.jpg</string>
+ 	<string name="url_format_thumbnail_mq">http://img.youtube.com/vi/%s/mqdefault.jpg</string>
+ 	<string name="url_format_thumbnail_hq">http://img.youtube.com/vi/%s/hqdefault.jpg</string>
+ 	<string name="url_format_thumbnail_sd">http://img.youtube.com/vi/%s/sddefault.jpg</string>
+	<string name="url_format_subtitles">http://www.universalsubtitles.org/api/1.0/subtitles/?video_url=%1$s&amp;language=%2$s</string>
+</resources>
