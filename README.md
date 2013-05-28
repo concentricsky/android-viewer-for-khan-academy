@@ -29,12 +29,16 @@ For the full license text, follow the link above or see the LICENSE file.
 
 ## Building
 
+##### The Basics
+
 The build requires [Maven](http://maven.apache.org/download.html)
 v3.0.3+ and the [Android SDK](http://developer.android.com/sdk/index.html)
 to be installed in your development environment. In addition you'll need to set
 the `ANDROID_HOME` environment variable to the location of your SDK:
 
     export ANDROID_HOME=/Users/austinlally/opt/android/sdk
+    
+##### API Credentials
     
 Khan Academy API credentials are stored outside the repo for security reasons, so copy over the sample file:
 
@@ -51,6 +55,26 @@ With Maven installed and configured and `oauth_credentials.json` in place, build
 * Run `mvn clean install android:deploy android:run` to install and run the app also.
 
 **NOTE**: If you already have the app installed through the Play or Amazon store, you'll need to remove it before installing a custom built version.
+
+##### Content
+
+There is a small python script to download the Khan Academy topic tree and build a database. We ship the application with a pre-built database to avoid a long initial startup time.
+
+You'll want [pip](https://pypi.python.org/pypi/pip) and [virtualenv](https://pypi.python.org/pypi/virtualenv).
+
+Initial setup:
+
+    cd etc/scripts
+    virtualenv --distribute env
+    source env/bin/activate
+    pip install -r requirements.txt
+
+Each time you want to build a db:
+
+	cd etc/scripts
+    python build_db.py
+    
+To build the new db with the app, copy the output of this script to `res/raw/db`.
 
 ## Acknowledgements
 

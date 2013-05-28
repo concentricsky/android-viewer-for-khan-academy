@@ -157,15 +157,15 @@ def main():
 
     db = create_database('out.sqlite3')
 
-    #logging.info('requesting new topic tree...')
-    #base_url = 'http://www.khanacademy.org/api/v1/'
-    #conn = Connection(base_url)
-    #response = conn.request_get('/topictree')
-    #logging.info('parsing json response...')
-    #tree = json.loads(response.get('body'))
-    #logging.info('writing to file...')
-    #with open('../topictree', 'w') as f:
-    #    f.write(json.dumps(tree))
+    logging.info('requesting new topic tree...')
+    base_url = 'http://www.khanacademy.org/api/v1/'
+    conn = Connection(base_url)
+    response = conn.request_get('/topictree')
+    logging.info('parsing json response...')
+    tree = json.loads(response.get('body'))
+    logging.info('writing to file...')
+    with open('../topictree', 'w') as f:
+        f.write(json.dumps(tree))
 
     logging.info('loading topic tree file...')
     with open('../topictree', 'r') as f:
