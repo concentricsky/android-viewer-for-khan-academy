@@ -1,5 +1,7 @@
 # Viewer for Khan Academy
 
+Viewer for Khan Academy was developed by [Concentric Sky](http://www.concentricsky.com) in Eugene Oregon free of charge. Concentric Sky develops educational software solutions for companies and organizations like Cengage Learning, Encyclopedia Britannica, National Geographic, and Junyo. Education is in our roots, and we felt like building Viewer for Khan Academy (and open sourcing it) was an opportunity to give back to the world. Enjoy.
+
 This repository contains the source code for the Viewer for Khan Academy Android app available from [Google Play](https://play.google.com/store/apps/details?id=com.concentricsky.android.khan) and the [Amazon Appstore](http://www.amazon.com/Viewer-Academy-Kindle-Tablet-Edition/dp/B00ARP009Y/).
 
 Please see the [issues](https://github.com/concentricsky/android-viewer-for-khan-academy/issues) section
