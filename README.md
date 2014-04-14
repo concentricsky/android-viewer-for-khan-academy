@@ -1,3 +1,5 @@
+![Concentric Sky](https://concentricsky.com/media/uploads/images/csky_logo.jpg)
+
 # Viewer for Khan Academy
 
 Viewer for Khan Academy was developed by [Concentric Sky](http://www.concentricsky.com) in Eugene Oregon free of charge. Concentric Sky develops educational software solutions for companies and organizations like Cengage Learning, Encyclopedia Britannica, National Geographic, and Junyo. Education is in our roots, and we felt like building Viewer for Khan Academy (and open sourcing it) was an opportunity to give back to the world. Enjoy.
@@ -7,27 +9,11 @@ This repository contains the source code for the Viewer for Khan Academy Android
 Please see the [issues](https://github.com/concentricsky/android-viewer-for-khan-academy/issues) section
 to report any bugs or feature requests and to see the list of known issues.
 
-## License
-
-####[GPL Version 3](http://www.gnu.org/licenses/gpl-3.0.html)
-
-Viewer for Khan Academy
-Copyright (C) 2012 Concentric Sky, Inc.
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-For the full license text, follow the link above or see the LICENSE file.
+### Table of Contents
+- [Building](#building)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
+- [About Concentric Sky](#about-concentric-sky)
 
 ## Building
 
@@ -95,3 +81,30 @@ Please fork this repository and contribute back using
 [pull requests](https://github.com/concentricsky/android-viewer-for-khan-academy/pulls).
 
 Any contributions, large or small, are welcomed and appreciated and will be thoroughly reviewed and discussed.
+
+## License
+
+####[GPL Version 3](http://www.gnu.org/licenses/gpl-3.0.html)
+
+Viewer for Khan Academy
+Copyright (C) 2012 Concentric Sky, Inc.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+For the full license text, follow the link above or see the LICENSE file.
+
+## About Concentric Sky
+
+_For nearly a decade, Concentric Sky has been building technology solutions that impact people everywhere. We work in the mobile, enterprise and web application spaces. Our team, based in Eugene Oregon, loves to solve complex problems. Concentric Sky believes in contributing back to our community and one of the ways we do that is by open sourcing our code on GitHub. Contact Concentric Sky at hello@concentricsky.com._
+
